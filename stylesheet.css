@@ -1,3 +1,12 @@
 .carousel-inner > .item > img {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;   
+}
+
+.carousel-control > .glyphicon-chevron-right:before , .carousel-control > .glyphicon-chevron-left:before {
+  padding: 0.3em;
+  background-color: purple;
 }
