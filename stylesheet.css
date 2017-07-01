@@ -9,3 +9,31 @@ footer {
     vertical-align: middle;
     float: none;
 }
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+.carousel-inner > .item > img {
+  width: 100%;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;   
+}
+
+.carousel-control > .glyphicon-chevron-right:before , .carousel-control > .glyphicon-chevron-left:before {
+  padding: 0.3em;
+  background-color: purple;
+}
+
+.carousel-control > .glyphicon-chevron-right, .carousel-control > .glyphicon-chevron-left {
+  font-size: 1em;
+}
+
+.carousel-control > .glyphicon-chevron-right {
+  right: 10%;
+}
+
+.carousel-control > .glyphicon-chevron-left {
+  left: 10%;
+}
