@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+	padding: 0;	
+}
 footer {
   background-color: purple;
   padding: 3px;
@@ -37,3 +41,201 @@ footer {
 .carousel-control > .glyphicon-chevron-left {
   left: 10%;
 }
+
+
+#navbar {
+	position: fixed;
+	top: 0;
+	background-color: rgba(169, 30, 172, 1);
+	border-radius: 0;
+	padding: 0;
+	height: 60px;
+	z-index: 3;
+	width: 100vw;
+}
+
+.logo-container {
+	height: 60px;
+	line-height: 60px;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+div.nav-tab {
+	height: 60px;
+	line-height: 60px;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+div.hover-div {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+div.hover-div:hover {
+	border-bottom: solid #EA8D14;
+}
+
+div.sub-tab {
+	display: none;
+	margin: 0;
+}
+
+a.sub-tab-link {
+	display: block;
+	padding-bottom: 0;
+	margin: 0;
+	font-size: 13px;
+    text-decoration: none;
+	color: #EA8D14;
+	background-color: rgba(169, 30, 172, 1);
+	
+}
+
+a.sub-tab-link:hover {
+	background-color: #921a99;
+}
+
+.religious-tab:hover .sub-tab {
+	display: block;
+}
+
+.information-tab:hover .sub-tab {
+	display: block;	
+}
+
+a.nav-link {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: white;
+	text-decoration: none;
+}
+
+a.nav-link:link {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+a.nav-link:visited {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+a.nav-link:hover {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+a.nav-link:active {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+.toggle {
+	display: none;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin: 0px;
+}
+
+#menu-icon {
+	color: orange;
+	cursor: pointer;	
+}
+
+#toggle-menu {
+	display: none;
+	border: solid #921a99 1px;
+	width: 300px;
+	position: fixed;
+	right: 0px;
+	z-index: 3;
+}
+
+.toggle-tab {
+	background-color: rgba(169, 30, 176, 1);
+	height: 60px;
+	line-height: 60px;
+	padding: 0;
+	border: solid #921a99 1px;
+	text-align: center;
+	width: 300px;
+}
+
+#toggle-sub-tab-one {
+	background-color: rgba(169, 30, 176, 1);
+	padding: 0;
+	border: solid #921a99 1px;
+	text-align: left;
+	width: 300px;
+	display: none;
+}
+
+#toggle-sub-tab-two {
+	background-color: rgba(169, 30, 176, 1);
+	padding: 0;
+	border: solid #921a99 1px;
+	text-align: left;
+	width: 300px;
+	display: none;
+}
+
+a.toggle-sub-tab-link {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 12px;
+	margin: 0;
+	font-size: 13px;
+    text-decoration: none;
+	color: #EA8D14;
+	background-color: rgba(169, 30, 172, 1);
+	border: solid #921a99 1px;
+}
+
+a.toggle-sub-tab-link:link {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+a.toggle-sub-tab-link:visited {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+a.toggle-sub-tab-link:hover {
+	color: #EA8D14;
+	text-decoration: none;
+	background-color: #921a99;
+}
+
+a.toggle-sub-tab-link:active {
+	color: #EA8D14;
+	text-decoration: none;
+}
+
+.test {
+	position: absolute;
+	top: 100px
+}
+@media only screen and (max-width: 1200px) {
+	
+	div.nav-tab {
+		display: none;
+	}
+	
+	.toggle {
+		display: block;
+	}
+	
+}
+
