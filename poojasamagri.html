@@ -1,0 +1,810 @@
+<!DOCTYPE html> 
+
+<html> 
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:300,400|Lato" rel="stylesheet">
+		
+	  <link rel="stylesheet" href="stylesheet.css" text="text/css">
+    
+	  <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	
+    <title>HTBN</title>
+    <!--[if lt IE 9 ]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+	
+  </head>
+	<body class="" lang="en-US">
+		<div id= "navbar" class="container-fluid col-xs-12">
+			<div class="row" style="padding: 0; margin: 0;">
+				<div class=" col-md-5 col-xs-6 logo-container">
+				</div>  
+				<div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab">
+					<div class="hover-div"><a class= "nav-link" href="index.html"> Home</a></div>
+				</div>
+				<div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab information-tab">
+					<div class= "hover-div"><a class= "nav-link" href="#"> Information</a></div>
+					<div class="sub-tab">
+						<a class="sub-tab-link" href="mission.html">Mission</a>
+						<a class="sub-tab-link" href="guidelines.html">Guidelines</a>
+						<a class="sub-tab-link" href="#">Leadership</a>
+					</div>
+				</div>
+				<div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab">
+					<div class= "hover-div"><a class= "nav-link" href="donate.html"> Donate</a></div>
+				</div>
+          
+				<div class="col-lg-1 hidden-xs hidden-sm hidden-md nav-tab religious-tab">
+					<div class= "hover-div"><a class= "nav-link" href="religious.html"> Religious</a></div>
+					<div class="sub-tab">
+						<a class="sub-tab-link" href="priestservices.html">Priest Services</a>
+						<a class="sub-tab-link" href="dietyservices.html">Diety Services</a>
+						<a class="sub-tab-link" href="#">Priest Profiles</a>
+						<a class="sub-tab-link" href="#">Pooja Samagari</a>
+					</div>
+				</div>
+				<div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab">
+					<div class= "hover-div"><a class= "nav-link" href="templeclasses.html"> Classes</a></div>
+				</div>
+				<div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab">
+					<div class= "hover-div"><a class= "nav-link" href="calendar.html"> Calendar</a></div>
+				</div>
+				<div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab" style="padding-right: 10px;">
+					<div class= "hover-div"><a class= "nav-link" href="contactus.html"> Contact Us</a></div>
+				</div>		
+				<div class="col-md-7 col-xs-6 toggle">
+					<div id= "menu-icon"><span id= "hamburger-menu" style="cursor: pointer;" class="glyphicon glyphicon-menu-hamburger" onclick="showMenu()"></span></div>
+				</div>        
+			</div>
+		</div>
+		<div id= "toggle-menu" class= "row container-fluid hidden-lg hidden-xl">
+				<span id= "remove-icon" style="cursor: pointer;" class="glyphicon glyphicon-remove" onclick="hideMenu()"></span>
+				<div  class= "toggle-tab row" style="cursor: pointer;">
+					<a class= "toggle-nav-link" href= "index.html">Home</a>
+				</div>
+				<div id="toggle-information-tab" style="cursor: pointer;" class= "toggle-tab row">
+					<a class= "toggle-nav-link" href= "#">Information</a>
+				</div>        
+				<div class="toggle-arrow-down">
+				</div>
+				<div id="toggle-sub-tab-one" class= "row">
+					<a class="toggle-sub-tab-link" href="mission.html">Mission</a>
+					<a class="toggle-sub-tab-link" href="guidelines.html">Guidelines</a>
+					<a class="toggle-sub-tab-link" href="#">Leadership</a>
+				</div>      
+				<div  class= "toggle-tab row">
+					<a class= "toggle-nav-link" href="donate.html">Donate</a>
+				</div>
+				<div id="toggle-religious-tab" style="cursor: pointer;" class= "toggle-tab row">
+					<a class= "toggle-nav-link" href="#">Religious</a>
+				</div>
+				<div class="toggle-arrow-down">
+				</div>
+				<div id="toggle-sub-tab-two" class= "row">
+					<a class="toggle-sub-tab-link" href="priestservices.html">Priest Services</a>
+					<a class="toggle-sub-tab-link" href="dietyservices.html">Diety Services</a>
+					<a class="toggle-sub-tab-link" href="#">Priest Profiles</a>
+					<a class="toggle-sub-tab-link" href="#">Pooja Samagari</a>
+				</div>        
+				<div  class= "toggle-tab row">
+					<a class= "toggle-nav-link" href="#">Classes</a>
+				</div>        
+				<div  class= "toggle-tab row">
+					<a class= "toggle-nav-link" href="#">Calendar</a>
+				</div>       
+				<div  class= "toggle-tab row">
+					<a class= "toggle-nav-link" href="#">Contact Us</a>
+				</div>       
+		</div>
+	<div id="overlay" class="hidden-lg hidden-xl"></div>
+	<div class="mission-banner">
+		Pooja Samagari
+	</div>
+	<div class="arrow-down">
+	</div>
+	<div class="container-fluid col-xs-12" id="samagri-container">
+		<div class="row col-xs-12 samagri-row">
+			<div class="col-md-3 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel" >
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>			
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel" >
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>			
+			</div>
+		</div>
+	<div class="row col-xs-12 samagri-row">
+			<div class="col-md-3 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel" >
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>			
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel" >
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>			
+			</div>
+		</div>
+	<div class="row col-xs-12 samagri-row">
+			<div class="col-md-3 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel" >
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>			
+			</div>
+			<div class="col-md-3 col-xs-12 samagri-panel" >
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table">
+				<tbody>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>			
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid col-md-6 col-md-offset-3" style=" padding-top: 0; padding-bottom: 0; margin-bottom: 40px;">
+		<div class="row col-xs-12 samagri-row" style="margin: 0;">
+			<div class="col-md-6 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="col-md-6 col-xs-12 samagri-panel">
+				<div class="samagri-panel-header" style="height: 150px;">
+					<h1>Abhishekam</h1>
+				</div>
+				<div class="samagri-panel-circle">
+					$101
+				</div>
+				<table class="table samagri-table" id="profile-table">
+				<tbody style="height: 220px;">
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr> 
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+						<tr>
+					
+					<td>Twday</td>
+				</tr>
+				<tr>
+					
+					<td>Twday</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid col-xs-12 membership-container">
+			<div class="row col-xs-12" style="padding: 0; margin: 0;">
+				<div class="col-xs-12 col-sm-6 membership-text" style="border-right: solid orange 1px;">
+					<h1>Any questions? Let us know</h1>
+					<a href="#">
+						<div class="donate-button" style="margin-top: 20px;">CONTACT US</div>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-6 membership-text">
+					<h1>Become a member of the temple and enjoy our benefits</h1>
+					<a href="#">
+						<div class="donate-button" style="margin-top: 20px;">MEMBERSHIP FORM</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	
+    <script type= "text/javascript">  
+        
+    function showMenu () {
+		var x = document.getElementById("toggle-menu");
+		var y = document.getElementById("overlay");
+		x.style.width = '330px';
+		y.style.display = 'block';
+	}
+	
+	function hideMenu () {
+		var x = document.getElementById("toggle-menu");
+		var y = document.getElementById("overlay");
+		x.style.width = '0px';
+		y.style.display = 'none';
+	}
+      
+    $(document).ready(function(){
+        $("#toggle-information-tab").click(function(){
+            $("#toggle-sub-tab-one").toggle();
+        });
+      });
+      
+    $(document).ready(function(){
+        $("#toggle-religious-tab").click(function(){
+            $("#toggle-sub-tab-two").toggle();
+        });
+      });
+	  
+	function showDiv() {
+    var i, divcontent;
+    divcontent = document.getElementsByClassName("divcontent");
+	x = document.getElementById("sel1").value;
+	
+    for (i = 0; i < divcontent.length; i++) {
+        divcontent[i].style.display = "none";
+    }
+
+    document.getElementById(x).style.display = "block";
+    
+	}   
+		
+    </script>
+        
+  </body> 
+</html>
