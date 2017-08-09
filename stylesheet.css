@@ -9,10 +9,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-  background-color: purple;
-  padding: 3px;
+  background-color: rgba(169, 30, 172, 1);
+  padding: 6px;
   color: white;
   text-align: center;
+}
+
+.mid-bold {
+  font-weight: 500;
 }
 .vcenter {
     display: inline-block;
@@ -48,6 +52,36 @@ footer {
   left: 10%;
 }
 
+.md-padding {
+  padding: 30px;
+}
+
+.mapouter{
+  overflow:hidden;
+  height: 100%;
+  width: 100%;
+}
+/*
+.fc-content {
+  padding: 3px;
+  background-color: rgba(169, 30, 172, 1);
+  border: none;
+}
+
+.fc-event {
+  background-color: white;
+  border: none;
+}
+*/
+#contact-container .glyphicon {
+  padding-right: 15px;
+}
+
+#gmap_canvas {
+  background:none!important;
+  height:500px;
+  width:600px;
+}
 
 #navbar {
 	position: fixed;
@@ -452,12 +486,16 @@ footer {
 
 #listbox-container {
 	margin: 0;
-	height: 300px;
+	min-height: 300px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 20px;
+  padding-bottom: 20px;
 	text-align: center;
 	background-color: rgba(169, 30, 172, 1);
+}
+
+#listbox-container > form {
 }
 
 #listbox-label { 
@@ -469,10 +507,22 @@ footer {
 	color: white;
 }
 
-#sel1 {
-	width: 100px;
-	margin-left: 70px;
-	margin-right: 70px;
+.select-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  border: none;
+  padding: 0px 10px;
+  box-shadow: none;
+  outline: solid 2px orange;
+  border-radius: 0px;
+  color: rgb(74, 74, 74);
+  padding-right: 36px;
+  background: orange url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png') no-repeat;
+  background-size: 20px;
+  background-position: right 10px center;
+  margin: 10px 0px;
 }
 .form-group > h1 {
 	font-size: 3rem;
@@ -508,6 +558,7 @@ footer {
 	display: none;
 	height: 300px;
 	margin: 0;
+  padding-top: 20px;
 }
 
 .divcontent-text {
@@ -1076,7 +1127,7 @@ footer {
 	border: solid white 7px; 
 	text-align: center; 
 	font-size: 30px; 
-	line-height: 110px;">
+	line-height: 110px;
 }
 
 .samagri-table {
@@ -1103,10 +1154,6 @@ footer {
 		padding: 0px;
 	}
 	
-	#listbox-container {
-		height: 220px;
-	}
-	
 	.opening-image {
 		background-position: center;
 	}
@@ -1118,6 +1165,10 @@ footer {
 		padding: 0px;
 	}
 	
+	#listbox-container {
+		min-height: 0px;
+	}
+
 	.profile-container {
 		padding: 0 10px 0 10px;
 	}
@@ -1189,4 +1240,33 @@ footer {
 	
 }
 
+.subscribe {
+  padding: 10px;
+}
+
+.slides-list {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  overflow-x: scroll;
+}
+
+.slide-item {
+  min-width: 220px;
+  padding: 15px;
+  background-color: rgba(169, 30, 172, 1);
+  color: white;
+  box-shadow: 0 0 5px rgb(119, 119, 119);
+  margin: 0px 10px;
+}
+
+.btn-primary {
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-primary:hover {
+  background-color: orange;
+  border-color: orange;
+}
 
