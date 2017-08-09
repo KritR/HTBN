@@ -1,0 +1,15 @@
+.slides-list {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  overflow-x: scroll;
+}
+
+.slide-item {
+  min-width: 220px;
+  padding: 15px;
+  background-color: rgba(169, 30, 172, 1);
+  color: white;
+  box-shadow: 0 0 5px rgb(119, 119, 119);
+  margin: 0px 10px;
+}

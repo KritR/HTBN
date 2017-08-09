@@ -1,0 +1,16 @@
+<div class="container-fluid col-xs-12 panel-container">
+  <div class="row">
+    <div class="col-md-7 col-md-push-5 col-xs-12 panel-image-container vcenter">
+      <img class="panel-image" src="{{image}}" alt="{{image-alt}}"></img>
+    </div><!--
+    --><div class="col-md-5 col-md-pull-7 col-xs-12 panel-text-container vcenter" style="height: 100%;">
+      <div class="panel-text" >
+        <h1>{{title}}</h1>
+        <p>{{text}}</p>
+        {{#if link}}
+          <a href="{{link}}">Learn More</a>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
