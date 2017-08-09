@@ -41,6 +41,10 @@
 	margin: 0;
 }
 
+.nav-tab:hover .sub-tab {
+	display: block;
+}
+
 .hover-div {
 	height: 60px;
 	line-height: 60px;
@@ -74,14 +78,6 @@
 	background-color: #921a99;
 	text-decoration: none;
 	color: white;
-}
-
-.religious-tab:hover .sub-tab {
-	display: block;
-}
-
-.information-tab:hover .sub-tab {
-	display: block;	
 }
 
 .nav-link {

@@ -13,6 +13,10 @@ function hideMenu () {
 }
   
 $(document).ready(function(){
+  /*$('.menu a').on('click', function({
+    $('.menu a').removeClass('active');
+    $(this).addClass('active');
+  });*/
   $("#toggle-information-tab").click(function(){
     $("#toggle-sub-tab-one").toggle();
   });
