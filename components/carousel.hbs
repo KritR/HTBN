@@ -5,13 +5,13 @@
     <li data-target="#home-carousel" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
-    {{#each image}}
+    {{#each images}}
       {{#if @first}}
         <div class="item active">
       {{else}}
         <div class="item">
       {{/if}}
-        <img src="{{this}}">
+        <img src="{{image}}">
       </div>
     {{/each}}
   </div>

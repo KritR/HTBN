@@ -265,3 +265,16 @@
 	text-decoration: none;
 }
 
+@media only screen and (max-width: 1200px) {
+	#navbar {
+		background-color: rgba(169, 30, 172, 1);
+	}
+	
+	.toggle {
+		display: block;
+	}
+	
+	.nav-tab {
+		display: none;
+	}
+}

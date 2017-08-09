@@ -1,0 +1,23 @@
+{{#with data}}
+<div id="contact-container" class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 md-padding">
+      <h2>Contact Information</h2>
+      <br>
+      <h4> <span class="glyphicon glyphicon-envelope"></span> Email</h4>
+      <h5>{{email}}</h5>
+      <br>
+      <h4> <span class="glyphicon glyphicon-phone-alt"></span> Phone</h4>
+      <h5>{{phone}}</h5>
+      <br>
+      <h4> <span class="glyphicon glyphicon-map-marker"></span> Address</h4>
+      <h5>{{address}}</h5>
+      <br>
+    </div>
+    <div class="col-md-6 col-xs-12 md-padding">
+      <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q={{address}}&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+    </div>
+  </div>
+</div>
+{{/with}}
+

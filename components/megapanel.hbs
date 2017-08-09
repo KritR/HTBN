@@ -1,13 +1,17 @@
+{{#with data}}
 <div class="container-fluid jumbo" >
   <h1>{{title}}</h1>
   <div class="row col-xs-12 temple-panel" style="background-color: white;" >
-    <div class="col-md-8 col-xs-12 temple-panel-container"> </div>
+    <div class="col-md-8 col-xs-12 temple-panel-container">
+      <img class="img-responsive" src="{{image}}"></img>
+    </div>
     <div class="col-md-4 col-xs-12 temple-text" style="padding: 30px 70px 60px 70px;">
       <h1>{{subtitle}}</h1>
       <p>{{text}}</p>
       {{#if link}}
-        <a href="{{link}}>Learn More</a>
+        <a href="{{link}}">Learn More</a>
       {{/if}}
     </div>
   </div>
 </div>
+{{/with}}

@@ -27,10 +27,15 @@
 	
   </head>
 	<body lang="en-US">
-    {{> navbar}}
-    {{> @partial-block}}
-    {{> subscribe}}
-    {{> footer}}
+    <div class="wrapper">
+      {{> navbar}}
+      <div class="content">
+      {{> @partial-block}}
+      </div>
+      {{#> footer}}
+        {{> subscribe}}
+      {{/footer}}
+    </div>
     <!-- Footer --> 
   </body> 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
