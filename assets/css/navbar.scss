@@ -129,49 +129,62 @@
 	padding: 0px;
 }
 
-#remove-icon {
+.remove-icon {
 	color: white;
 	font-size: 20px;
 	font-weight: 20;
 	position: absolute;
-	right: 50px;
-	top: 55px;
+	right: 20px;
+	top: 25px;
 	-webkit-transition: color .3s;
-    transition: color .3s;
+  transition: color .3s;
 }
 
-#remove-icon:hover {
+.remove-icon:hover {
 	color: orange;
 }
 
-#toggle-menu {
+.toggle-menu {
 	position: fixed;
-	right: -30px;
+	right: -300px;
 	top: 0px;
 	margin: 0px;
-	z-index: 3;
 	overflow-x: hidden;
 	height: 100vh;
 	overflow-y: auto;
 	background-color: rgba(169, 30, 176, 1);
-	width: 0px;
+	width: 300px;
 	z-index: 2001;
 	padding-top: 50px;
-	-webkit-transition: width .3s;
-    transition: width .3s;
+	-webkit-transition: right .4s;
+  transition: right .4s;
 }
 
-.toggle-tab {
+.toggle-menu.active {
+  right: 0px;
+}
+
+.toggle-tab.active > .toggle-sub-tab-menu {
+  display: block;
+}
+
+.toggle-sub-tab-menu {
+  text-align: center;
+	background-color: rgb(192, 34, 195);
+	display: none;
+}
+
+.toggle-nav-title {
 	background-color: rgba(169, 30, 176, 1);
+  cursor: pointer;
 	text-align: left;
-	padding-left: 20px;
 	padding: 3px 0 5px 40px;
 	border-left: none;
 	-webkit-transition: border-left .2s;
-    transition: border-left .2s;
+  transition: border-left .2s;
 }
 
-.toggle-tab:hover {
+.toggle-nav-title:hover {
 	border-left: solid orange 4px;
 }
 
@@ -181,43 +194,11 @@
 	color: white;
 	text-decoration: none;
 	-webkit-transition: color .2s;
-    transition: color .2s;
-}
-
-.toggle-nav-link:link {
-	color: white;
-	text-decoration: none;
-}
-
-.toggle-nav-link:visited {
-	color: white;
-	text-decoration: none;
-}
-
-.toggle-nav-link:hover {
-	color: orange;
-	text-decoration: none;
-}
-
-.toggle-nav-link:active {
-	color: orange;
-	text-decoration: none;
-}
-
-#toggle-sub-tab-one {
-	background-color: rgb(192, 34, 195);
-	display: none;
-	padding: 20px 0 0 0; 
-	text-align: center;
-	width: 300px;
-}
-
-#toggle-sub-tab-two {
-	background-color: rgb(192, 34, 195);
-	padding: 20px 0 0 0; 
-	width: 300px;
-	text-align: center;
-	display: none;
+  transition: color .2s;
+  
+  &:hover, &:active {
+    color: orange;
+  }
 }
 
 .toggle-arrow-down {
@@ -226,8 +207,8 @@
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	border-top: 20px solid rgba(169, 30, 172, 1);
-	position: absolute;
-	left: 110px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .toggle-sub-tab-link {

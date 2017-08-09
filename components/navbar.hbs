@@ -25,45 +25,28 @@
     </div>        
   </div>
 </div>
-<div id="toggle-menu" class= "row container-fluid hidden-lg hidden-xl">
-    <span id="remove-icon" style="cursor: pointer;" class="glyphicon glyphicon-remove" onclick="hideMenu()"></span>
-    <div class="toggle-tab row" style="cursor: pointer;">
-      <a class="toggle-nav-link" href= "/">Home</a>
-    </div>
-    <div style="cursor: pointer;" class="toggle-tab row">
-      <a class="toggle-nav-link" href="#">Information</a>
-      <div class="toggle-sub-tab-menu">
-        <div class="toggle-arrow-down"></div>
-        <div class="toggle-sub-tab-links">
-          <a class="toggle-sub-tab-link" href="mission">Mission</a>
-          <a class="toggle-sub-tab-link" href="guidelines">Guidelines</a>
-          <a class="toggle-sub-tab-link" href="#">Leadership</a>
-        </div>      
-      </div>
-    </div>        
-    <div  class= "toggle-tab row">
-      <a class= "toggle-nav-link" href="donate">Donate</a>
-    </div>
-    <div style="cursor: pointer;" class= "toggle-tab row">
-      <a class="toggle-nav-link" href="#">Religious</a>
-      <div class="toggle-sub-tab-menu">
-        <div class="toggle-arrow-down"></div>
-        <div class="toggle-sub-tab-links">
-          <a class="toggle-sub-tab-link" href="priestservices">Priest Services</a>
-          <a class="toggle-sub-tab-link" href="dietyservices">Diety Services</a>
-          <a class="toggle-sub-tab-link" href="priestprofiles">Priest Profiles</a>
-          <a class="toggle-sub-tab-link" href="#">Pooja Samagari</a>
+<div class="toggle-menu row container-fluid hidden-lg hidden-xl">
+    <span style="cursor: pointer;" class="glyphicon glyphicon-remove remove-icon" onclick="hideMenu()"></span>
+    {{#each global.navigation}}
+      {{#if routes}}
+        <div class="toggle-tab row">
+          <div class="toggle-nav-title"><span class="toggle-nav-link">{{title}}</a></div>
+          <div class="toggle-sub-tab-menu">
+            <div class="toggle-arrow-down"></div>
+            <div class="toggle-sub-tab-links">
+            {{#each routes}}
+              <a class="toggle-sub-tab-link" href="{{link}}">{{title}}</a>
+            {{/each}}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class= "toggle-tab row">
-      <a class= "toggle-nav-link" href="#">Classes</a>
-    </div>        
-    <div class= "toggle-tab row">
-      <a class= "toggle-nav-link" href="#">Calendar</a>
-    </div>       
-    <div class= "toggle-tab row">
-      <a class= "toggle-nav-link" href="#">Contact Us</a>
-    </div>       
+      {{else}}
+        <div class="toggle-tab row">
+          <div class="toggle-nav-title">
+            <a class="toggle-nav-link" href="{{link}}">{{title}}</a>
+          </div>
+        </div>
+      {{/if}}
+    {{/each}}
 </div>
 <div id="overlay" class="hidden-lg hidden-xl"></div>
