@@ -1,0 +1,18 @@
+.social-container {
+	background-color: rgba(169, 30, 172, 1);
+	padding: 30px;
+  color: white;
+  text-align: center;
+  .content-block {
+    padding: 20px;
+    border-right: solid orange 1px;
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+  .social-icon {
+    width: 50px;
+    margin: 10px;
+  }
+}
+

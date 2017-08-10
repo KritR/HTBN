@@ -1,5 +1,5 @@
 {
-  page_title: 'Hindu Temple of Bloomington Normal',
+	page_title: 'Hindu Temple of Bloomington Normal',
 	$carousel_min: 1,
 	carousel: [
 		{
@@ -18,6 +18,8 @@
 			caption: ''
 		}
 	],
+  $upcoming_events_templatitator: '@@global.event_types',
+	upcoming_events: [],
 	megapanel: {
 		title: 'OUR HINDU TEMPLE',
 		subtitle: 'A Temple For All',
@@ -33,7 +35,8 @@
 		image: '/remote/direct_uploads/1502306196_beads.jpg',
 		$text_type: 'textarea',
 		text: 'Lorem ipsum something fancy here maybe you know maybe you don\'t',
-		link: ''
+		link: '',
+		reverse: false
 	},
 	panel_2: {
 		title: 'Education',
@@ -41,7 +44,8 @@
 		image: '/remote/direct_uploads/1502306180_education.png',
 		$text_type: 'textarea',
 		text: 'Lorem ipsum something fancy here maybe you know maybe you don\'t',
-		link: ''
+		link: '',
+		reverse: true
 	},
 	panel_3: {
 		title: 'Canteen',
@@ -49,7 +53,8 @@
 		image: '/remote/direct_uploads/1502306203_canteen.png',
 		$text_type: 'textarea',
 		text: 'Lorem ipsum something fancy here maybe you know maybe you don\'t',
-		link: ''
+		link: '',
+		reverse: false
 	},
 	daily_events: {
 		$sunday_events_min: 1,

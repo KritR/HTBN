@@ -1,4 +1,4 @@
-<div id= "navbar" class="container-fluid col-xs-12">
+<div class="navbar" class="container-fluid col-xs-12">
   <div class="row" style="padding: 0; margin: 0;">
     <div class=" col-md-5 col-xs-6 logo-container">
       <img src="{{global.navigation_logo}}" alt="logo"></img>
@@ -21,7 +21,7 @@
       {{/if}}
     {{/each}}
     <div class="col-md-7 col-xs-6 toggle">
-      <div id= "menu-icon"><span id= "hamburger-menu" style="cursor: pointer;" class="glyphicon glyphicon-menu-hamburger" onclick="showMenu()"></span></div>
+      <div class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger hamburger-menu" onclick="showMenu()"></span></div>
     </div>        
   </div>
 </div>
@@ -32,7 +32,6 @@
         <div class="toggle-tab row">
           <div class="toggle-nav-title"><span class="toggle-nav-link">{{title}}</a></div>
           <div class="toggle-sub-tab-menu">
-            <div class="toggle-arrow-down"></div>
             <div class="toggle-sub-tab-links">
             {{#each routes}}
               <a class="toggle-sub-tab-link" href="{{link}}">{{title}}</a>

@@ -1,0 +1,21 @@
+{{#with data}}
+<div class="container">
+  <div class="row vmargin-sm">
+    {{#if reverse}}
+    <div class="col-xs-12 col-md-push-4 col-md-8 padding-md vcenter">
+    {{else}}
+    <div class="col-xs-12 col-md-8 padding-md vcenter">
+    {{/if}}
+      <h3 class='ul-left'>{{title}}</h3>
+      <p>{{text}}</p>
+    </div><!--
+    {{#if reverse}}
+    --><div class="col-md-4 col-md-pull-8 hidden-sm hidden-xs vcenter">
+    {{else}}
+    --><div class="col-md-4 hidden-sm hidden-xs vcenter">
+    {{/if}}
+      <img class="img-responsive" src="{{image}}"/>
+    </div>
+  </div>
+</div>
+{{/with}}

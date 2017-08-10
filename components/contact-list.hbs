@@ -1,0 +1,36 @@
+{{#with data}}
+	<div class="container vmargin-sm">
+    <h2>{{primary_contact_group_title}}</h2>
+    <div class="row">
+    {{#each primary_contact}}
+      <div class="col-xs-6 col-md-3 col-lg-2">
+        <h3>{{full_name}}</h3>
+        <h4>{{title}}</h4>
+        <a>{{phone}}</a>
+      </div>
+    {{/each}}
+    </div>
+    <br>
+    <h2>{{secondary_contact_group_title}}</h2>
+    <div class="row">
+    {{#each secondary_contact}}
+      <div class="col-md-3 col-lg-2 col-xs-6">
+        <h4>{{full_name}}</h4>
+        <h5>{{title}}</h5>
+        <a>{{phone}}</a>
+      </div>
+    {{/each}}
+    </div>
+    <br>
+    <h2>{{third_level_contact_group_title}}</h2>
+    <div class="row">
+    {{#each third_level_contact}}
+      <div class="col-md-3 col-lg-2 col-xs-6">
+        <h5>{{full_name}}</h5>
+        <h6>{{title}}</h6>
+        <a><small>{{phone}}</small></a>
+      </div>
+    {{/each}}
+    </div>
+  </div>
+{{/with}}

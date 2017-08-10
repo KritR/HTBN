@@ -1,12 +1,20 @@
 {{#with data}}
-<div class="container-fluid col-xs-12 panel-container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-7 col-xs-12 panel-image-container vcenter">
-      <img class="panel-image" src="{{image}}" alt="{{image-alt}}"></img>
+    {{#if reverse}}
+      <div class="col-md-7 col-md-push-5 col-xs-12 no-pad-col vcenter">
+    {{else}} 
+      <div class="col-md-7 col-xs-12 no-pad-col vcenter">
+    {{/if}}
+      <img class="img-responsive" src="{{image}}" alt="{{image-alt}}"></img>
     </div><!--
-    --><div class="col-md-5 col-xs-12 panel-text-container vcenter" style="height: 100%;">
-      <div class="panel-text" >
-        <h1>{{title}}</h1>
+    {{#if reverse}}
+      --><div class="col-md-5 col-md-pull-7 col-xs-12 panel-text-container vcenter">
+    {{else}}
+      --><div class="col-md-5 col-xs-12 panel-text-container vcenter">
+    {{/if}}
+      <div class="margin-sm" >
+        <h2 class="ul-left">{{title}}</h2>
         <p>{{text}}</p>
         {{#if link}}
           <a href="{{link}}">Learn More</a>

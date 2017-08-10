@@ -1,13 +1,13 @@
 {{#with data}}
-<div id="dailyevents-container" class="container-fluid col-xs-12">
-  <div class="row col-xs-12" style="margin: 0; padding: 0;">
-    <div id="listbox-container" class="col-md-4 col-xs-12">	
+<div class="container-fluid">
+  <div class="row margin-sm">
+    <div class="listbox-container col-md-4 col-xs-12">	
       <form>
         <div class="form-group" style="display: inline-block;">
-          <h1>DAILY EVENTS</h1>
+          <h1 class="ul-center">DAILY EVENTS</h1>
           <p>{{title}}</p>
-          <label for="sel1" id="listbox-label">Select Day:</label>
-          <select class="form-control select-control input-md" id="sel1" onchange="showDiv()">
+          <label for="day-select" class="daily-event-select-label">Select Day:</label>
+          <select class="form-control select-control input-md" id="day-select" onchange="showDiv()">
             <option>Sunday</option>
             <option>Monday</option>
             <option>Tuesday</option>
@@ -19,47 +19,47 @@
         </div>
       </form>
     </div>	
-    <div id="eventbox-container" class="col-md-8 col-xs-12">
-      <div id="Sunday" class="divcontent" style="display: block;">
-        <h1>SUNDAY</h1>
+    <div class="col-md-8 col-xs-12 day-event-container">
+      <div id="Sunday" class="day-event" style="display: block;">
+        <h1 class="ul-center">SUNDAY</h1>
         {{#each sunday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p class="day-event-text">{{text}}</p>
         {{/each}}
       </div>
-      <div id="Monday" class="divcontent">
-        <h1>MONDAY</h1>
+      <div id="Monday" class="day-event">
+        <h1 class="ul-center">MONDAY</h1>
         {{#each monday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p>{{text}}</p>
         {{/each}}
       </div>
-      <div id="Tuesday" class="divcontent" >
-        <h1>TUESDAY</h1>
+      <div id="Tuesday" class="day-event" >
+        <h1 class="ul-center">TUESDAY</h1>
         {{#each tuesday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p>{{text}}</p>
         {{/each}}
       </div>
-      <div id="Wednesday" class="divcontent">
-        <h1>WEDNESDAY</h1>
+      <div id="Wednesday" class="day-event">
+        <h1 class="ul-center">WEDNESDAY</h1>
         {{#each wednesday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p>{{text}}</p>
         {{/each}}
       </div>
-      <div id="Thursday" class="divcontent" >
-        <h1>THURSDAY</h1>
+      <div id="Thursday" class="day-event" >
+        <h1 class="ul-center">THURSDAY</h1>
         {{#each thursday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p>{{text}}</p>
         {{/each}}
       </div>
-      <div id="Friday" class="divcontent">
-        <h1>FRIDAY</h1>
+      <div id="Friday" class="day-event">
+        <h1 class="ul-center">FRIDAY</h1>
         {{#each friday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p>{{text}}</p>
         {{/each}}
       </div>
-      <div id="Saturday" class="divcontent" >
-        <h1>SATURDAY</h1>
+      <div id="Saturday" class="day-event" >
+        <h1 class="ul-center">SATURDAY</h1>
         {{#each saturday_events}}
-          <p class="divcontent-text">{{text}}</p>
+          <p>{{text}}</p>
         {{/each}}
       </div>
     </div>

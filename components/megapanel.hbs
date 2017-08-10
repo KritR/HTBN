@@ -1,15 +1,17 @@
 {{#with data}}
-<div class="container-fluid jumbo" >
-  <h1>{{title}}</h1>
-  <div class="row col-xs-12 temple-panel" style="background-color: white;" >
-    <div class="col-md-8 col-xs-12 temple-panel-container">
+<div class="jumbo text-center" >
+  <div class="row">
+    <h1 class="ul-center vmargin-xs">{{title}}</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-xs-12 no-pad-col">
       <img class="img-responsive" src="{{image}}"></img>
     </div>
-    <div class="col-md-4 col-xs-12 temple-text" style="padding: 30px 70px 60px 70px;">
-      <h1>{{subtitle}}</h1>
+    <div class="col-md-4 col-xs-12 content-block text-left">
+      <h3>{{subtitle}}</h3>
       <p>{{text}}</p>
       {{#if link}}
-        <a href="{{link}}">Learn More</a>
+        <a class="lead" href="{{link}}">Learn More</a>
       {{/if}}
     </div>
   </div>
