@@ -1,11 +1,11 @@
 function showMenu () {
   $(".toggle-menu").addClass('active');
-  $("#overlay").show();
+  $(".overlay").show();
 }
 
 function hideMenu () {
   $(".toggle-menu").removeClass('active');
-  $("#overlay").hide();
+  $(".overlay").hide();
 }
   
 $(document).ready(function(){
