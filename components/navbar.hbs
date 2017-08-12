@@ -21,32 +21,32 @@
       {{/if}}
     {{/each}}
     </ul>
-    <div class="navbar-right toggle hidden-lg">
-      <div class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger hamburger-menu" onclick="showMenu()"></span></div>
+    <div class="navbar-right hidden-lg" onclick="showMenu()">
+      <div class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger hamburger-menu"></span></div>
     </div>        
   </div>
 </nav>
 <nav class="toggle-menu row container-fluid hidden-lg hidden-xl">
     <span style="cursor: pointer;" class="glyphicon glyphicon-remove remove-icon" onclick="hideMenu()"></span>
+    <ul>
     {{#each global.navigation}}
       {{#if routes}}
-        <div class="toggle-tab row">
-          <div class="toggle-nav-title"><span class="toggle-nav-link">{{title}}<span class="caret"></span></span></div>
-          <div class="toggle-sub-tab-menu">
-            <div class="toggle-sub-tab-links">
+        <li class="toggle-tab">
+          <a>{{title}} <span class="caret"></span></a>
+          <ul class="toggle-sub-tab-menu">
             {{#each routes}}
-              <a class="toggle-sub-tab-link" href="{{link}}">{{title}}</a>
+              <li>
+                <a href="{{link}}">{{title}}</a>
+              </li>
             {{/each}}
-            </div>
-          </div>
-        </div>
+          </ul>
+        </li>
       {{else}}
-        <div class="toggle-tab row">
-          <div class="toggle-nav-title">
-            <a class="toggle-nav-link" href="{{link}}">{{title}}</a>
-          </div>
-        </div>
+        <li>
+          <a href="{{link}}">{{title}}</a>
+        </li>
       {{/if}}
     {{/each}}
+    </ul>
 </nav>
 <div class="overlay hidden-lg hidden-xl"></div>

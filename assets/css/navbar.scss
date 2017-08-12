@@ -17,6 +17,7 @@
 }
 
 .navbar-default {
+  font-weight: 500;
   background-color: rgba(169, 30, 172, 0.8);
   border: none;
   .navbar-nav>li:hover{
@@ -48,7 +49,6 @@
 
 nav{
   color: white;
-  font-weight: 500;
   a, .caret {
     letter-spacing: 1px;
     text-decoration: none;
@@ -62,18 +62,11 @@ nav{
   }
 }
 
-.toggle {
-  height: 60px;
-  text-align: right;
-  margin: 0px;
-  padding: 0px;
-}
-
 .menu-icon {
   cursor: pointer;	
-  height: 60px;
-  line-height: 70px;
-  padding-right: 0 20px;
+  height: 50px;
+  line-height: 60px;
+  padding: 0 20px;
 }
 
 .hamburger-menu {
@@ -85,9 +78,10 @@ nav{
   color: white;
   font-size: 20px;
   font-weight: 20;
+  padding: 10px;
   position: absolute;
-  right: 30px;
-  top: 20px;
+  right: 20px;
+  top: 10px;
   -webkit-transition: color .3s;
   transition: color .3s;
   &:hover {
@@ -95,7 +89,7 @@ nav{
   }
 }
 
-.toggle-menu {
+nav.toggle-menu {
   position: fixed;
   right: -300px;
   top: 0px;
@@ -105,14 +99,67 @@ nav{
   background-color: rgba(169, 30, 176, 1);
   width: 300px;
   z-index: 2001;
-  padding-top: 50px;
+  padding: 50px 0 0 0;
   -webkit-transition: right .4s;
   transition: right .4s;
+  font-size: 23px;
+  &.active {
+    right: 0px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    a {
+      display: inline-block;
+    }
+  }
+  a{
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    &:hover {
+      color: orange;
+      -webkit-transition: color .2s;
+      transition: color .2s;
+    }
+  }
+  &>ul>li {
+    border-left: 0px;
+    -webkit-transition: border-left .2s;
+    transition: border-left .2s;
+    &:hover > a {
+      border-left: solid orange 4px;
+      -webkit-transition: border-left .2s;
+      transition: border-left .2s;
+    }
+    & > a {
+      padding: 4px 0 4px 40px;
+    }
+  }
+  .toggle-sub-tab-menu {
+    font-size: 20px;
+    max-height: 0px;
+    text-align: center;
+    background-color: rgb(192, 34, 195);
+    position: relative;
+    transition: max-height 0.4s ease-out;
+    overflow: hidden;
+    &::before {
+      margin: 0 auto;
+      width: 0;
+      content: '';
+      display: block;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-top: 20px solid rgba(169, 30, 176, 1);
+      position: relative;
+    }
+    li > a {
+      padding: 10px 0;
+    }
+  }
 }
 
-.toggle-menu.active {
-  right: 0px;
-}
 
 .toggle-tab.active > .toggle-sub-tab-menu {
   transition: max-height 0.3s ease-in;
@@ -120,61 +167,6 @@ nav{
   max-height: 100vh;
 }
 
-.toggle-sub-tab-menu {
-  max-height: 0px;
-  text-align: center;
-  background-color: rgb(192, 34, 195);
-  position: relative;
-  transition: max-height 0.4s ease-out;
-  overflow: hidden;
-  &::before {
-    margin: 0 auto;
-    width: 0;
-    content: '';
-    display: block;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 20px solid rgba(169, 30, 176, 1);
-    position: relative;
-  }
-}
-
-.toggle-nav-title {
-  cursor: pointer;
-  text-align: left;
-  padding: 3px 0 5px 40px;
-  border-left: none;
-  -webkit-transition: border-left .2s;
-  transition: border-left .2s;
-  &:hover {
-    border-left: solid orange 4px;
-  }
-}
-
-.toggle-nav-link {
-  font-size: 23px;
-  letter-spacing: 1px;
-  -webkit-transition: color .2s;
-  transition: color .2s;
-
-  &:hover, &:active {
-    color: orange;
-  }
-}
-
-.toggle-sub-tab-link {
-  margin: 0;
-  display: block;
-  font-size: 20px;
-  padding: 10px 0 10px 0;
-  color: white;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-  &:hover, &:active {
-    color: orange;
-  }
-}
 
 @media only screen and (max-width: 1200px) {
   .navbar-default {
