@@ -1,10 +1,6 @@
 
 .overlay {
 	position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
 	width: 100vw;
 	height: 100vh;
   background-color: gray;
@@ -13,23 +9,48 @@
 	display: none;
 }
 
-.logo-container {
-	height: 60px;
-	line-height: 60px;
-	padding: 0;
-	text-align: center;
-	display: block;
-	margin: 0;
+.center-align-absolute {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
 }
 
 .navbar-default {
   background-color: rgba(169, 30, 172, 0.8);
   border: none;
+  .navbar-nav>li:hover{
+    background-color: rgba(169, 30, 172, 1);
+  }
+  .navbar-nav {
+    li>a, .open>a  {
+      background-color: transparent;
+      color: white;
+      &:hover {
+        background-color: rgba(169, 30, 172, 1);
+        color: white;
+      }
+    }
+  }
+  .dropdown-menu {
+    @extend .center-align-absolute;
+    background-color: rgba(169, 30, 172, 0.8);
+    padding: 0px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    li>a {
+      padding: 20px;
+    }
+  }
 }
 
 nav{
   color: white;
+  font-weight: 500;
   a, .caret {
+    letter-spacing: 1px;
     text-decoration: none;
     color: white;
     &:link, &:visited {
@@ -41,65 +62,18 @@ nav{
   }
 }
 
-.nav-tab {
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: block;
-  margin: 0;
-}
-
-.nav-tab:hover .sub-tab {
-  display: block;
-}
-
-.hover-div {
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: inline-block;
-  &:hover {
-    border-bottom: solid white;
-  }
-}
-
-.sub-tab {
-  display: none;
-  margin: 0;
-}
-
-.sub-tab-link {
-  display: block;
-  padding-bottom: 0;
-  margin: 0;
-  font-size: 13px;
-  background-color: rgba(169, 30, 172, .8);
-  &:hover {
-    background-color: #921a99;
-  }
-}
-
-.nav-link {
-  font-size: 14px;
-  letter-spacing: 1px;
-  &:hover, &:active {
-    color: white;
-  }
-}
-
 .toggle {
   height: 60px;
   text-align: right;
   margin: 0px;
   padding: 0px;
-  display: none;
 }
 
 .menu-icon {
   cursor: pointer;	
   height: 60px;
   line-height: 70px;
-  padding-right: 20px;
+  padding-right: 0 20px;
 }
 
 .hamburger-menu {
@@ -205,13 +179,5 @@ nav{
 @media only screen and (max-width: 1200px) {
   .navbar-default {
     background-color: rgba(169, 30, 172, 1);
-	}
-	
-	.toggle {
-		display: block;
-	}
-	
-	.nav-tab {
-		display: none;
 	}
 }

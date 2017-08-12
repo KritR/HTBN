@@ -1,26 +1,27 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-    <div class=" col-md-5 col-xs-6 navbar-brand">
+    <div class="navbar-brand">
       <img src="{{global.navigation_logo}}" alt="logo"></img>
     </div> 
+    <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
     {{#each global.navigation}}
       {{#if routes}}
-      
-      <div class=" col-lg-1 hidden-xs hidden-sm hidden-md nav-tab">
-        <div class= "hover-div"><a class="nav-link">{{title}}</a><span class="caret"></span></div>
-        <div class="sub-tab">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{title}} <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
         {{#each routes}}
-          <a class="sub-tab-link" href="{{link}}">{{title}}</a>
+         <li><a href={{link}}>{{title}}</a></li>
         {{/each}}
-        </div>
-      </div>
+        </ul>
+
+      </li>
       {{else}}
-      <div class="col-lg-1 hidden-xs hidden-sm hidden-md nav-tab">
-       <div class="hover-div"><a class="nav-link" href={{link}}>{{title}}</a></div>
-      </div>
+       <li><a href={{link}}>{{title}}</a></li>
       {{/if}}
     {{/each}}
-    <div class="col-md-7 col-xs-6 toggle">
+    </ul>
+    <div class="navbar-right toggle hidden-lg">
       <div class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger hamburger-menu" onclick="showMenu()"></span></div>
     </div>        
   </div>
