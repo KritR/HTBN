@@ -21,8 +21,8 @@
 			]
 		}
 	},
-  $navigation_logo_type: 'image',
-  navigation_logo: '',
+	$navigation_logo_type: 'image',
+	navigation_logo: '',
 	$navigation_templatitator: '@@routes_types',
 	navigation: [
 		{
@@ -69,7 +69,7 @@
 				},
 				{
 					title: 'Deity Services',
-					link: 'deity'
+					link: 'deity_services'
 				},
 				{
 					title: 'Priest Profiles',
