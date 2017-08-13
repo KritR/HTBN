@@ -1,0 +1,35 @@
+{{#with data}}
+<div class="container priest-table-container">
+		<table class="table table-bordered table-striped priest-table">
+			<thead>
+				<tr style="background-color: rgba(169, 30, 172, .8);">
+					<th rowspan="2">{{title_column}}</th>
+					<th colspan="2">{{category_one}}</th>
+					<th colspan="2">{{category_two}}</th>
+				</tr>
+				<tr style="background-color: rgba(169, 30, 172, .8);">
+					<th>{{time_one}}</th>
+					<th>{{time_two}}</th>
+					<th>{{time_three}}</th>
+					<th>{{time_four}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each rows}}
+				<tr>
+					<td>{{title_column}}</td>
+					<td>{{column_one}}</td>
+					<td>{{column_two}}</td>
+					<td>{{column_three}}</td>
+					<td>{{column_four}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	<div class="table-comment-text" >
+		<p>
+			{{table_caption}}
+		</p>
+	</div>	
+</div>
+{{/with}}

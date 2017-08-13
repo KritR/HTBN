@@ -1,0 +1,28 @@
+{{#with data}}
+<div class="container priest-table-container">
+	<h1>{{title}}</h1>
+	<table class="table table-bordered table-striped diety-table">
+		<thead>
+			<tr style="background-color: rgba(169, 30, 172, .8);">
+				<th >{{title_column}}</th>
+				<th >{{category_one}}</th>
+				<th >{{category_two}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each rows}}
+			<tr>
+				<td style="text-align: left;">{{title_column}}</td>
+				<td>{{column_one}}</td>
+				<td>{{column_two}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<div class="table-comment-text" >
+		<p>
+			{{table_caption}}
+		</p>
+	</div>	
+</div>
+{{/with}}

@@ -1,0 +1,24 @@
+{{#with data}}
+<div class="container profile-container" >
+	{{#each profile_panel}}
+	<div class="col-md-6 col-xs-12 profile-panel" >
+		<div class="profile-panel-header">
+			<h1>{{title}}</h1>
+		</div>
+		<div class="profile-img">
+			<img src="{{image}}" style="height: 250px; border-radius: 50%;">
+		</div>
+		<table class="table profile-table">
+			<tbody>
+				{{#each rows}}
+				<tr>
+					<td style="text-align: left;">{{title_column}}</td>
+					<td>{{column_one}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+	{{/each}}
+</div>
+{{/with}}

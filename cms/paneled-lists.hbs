@@ -1,0 +1,25 @@
+{{#with data}}
+<div class="container-fluid" id="samagri-container">
+	{{#each table_list}}
+	<div class="col-md-3 col-xs-12 samagri-panel">
+		<div class="samagri-panel-header" style="height: 150px;">
+			<h1>{{title}}</h1>
+		</div>
+		<div class="samagri-panel-circle">
+			{{#if link}}
+			<a href="{{link}}">{{link_title}}</a>
+			{{/if}}
+		</div>
+		<table class="table samagri-table" id="profile-table">
+			<tbody style="height: 220px;">
+				{{#each rows}}
+				<tr>
+					<td>{{column_one}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+	{{/each}}
+</div>
+{{/with}}
