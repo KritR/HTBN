@@ -39,15 +39,15 @@
 			routes: [
 				{
 					title: 'Mission',
-					link: 'mission'
+					link: '/mission'
 				},
 				{
 					title: 'Guidelines',
-					link: 'guidelines'
+					link: '/guidelines'
 				},
 				{
 					title: 'Leadership',
-					link: 'leadership'
+					link: '/leadership'
 				}
 			]
 		},
@@ -55,7 +55,7 @@
 			$route_type_type: 'title',
 			route_type: 'Single Link',
 			title: 'Donate',
-			link: 'donate'
+			link: '/donate'
 		},
 		{
 			$route_type_type: 'title',
@@ -65,19 +65,19 @@
 			routes: [
 				{
 					title: 'Priest Services',
-					link: 'priest_services'
+					link: '/priest_services'
 				},
 				{
 					title: 'Deity Services',
-					link: 'deity_services'
+					link: '/deity_services'
 				},
 				{
 					title: 'Priest Profiles',
-					link: 'priest_profiles'
+					link: '/priest_profiles'
 				},
 				{
 					title: 'Pooja Samagri',
-					link: 'pooja_samagri'
+					link: '/pooja_samagri'
 				}
 			]
 		},
@@ -85,19 +85,19 @@
 			$route_type_type: 'title',
 			route_type: 'Single Link',
 			title: 'Classes',
-			link: 'classes'
+			link: '/classes'
 		},
 		{
 			$route_type_type: 'title',
 			route_type: 'Single Link',
 			title: 'Calendar',
-			link: 'calendar'
+			link: '/calendar'
 		},
 		{
 			$route_type_type: 'title',
 			route_type: 'Single Link',
 			title: 'Contact Us',
-			link: 'contact_us'
+			link: '/contact_us'
 		}
 	]
 }
