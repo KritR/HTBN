@@ -21,171 +21,185 @@
 		rows: [
 			{
 				title_column: 'Abhishekam to Utsav Vigraha only (Ganesha, Rama, Shiva, Karthikeya, Venkateswara, Krishna, Sharadamba, etc)',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				column_one: '$101',
+				column_two: '$151',
+				column_three: 'NA',
+				column_four: 'NA'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Aksharabhyasa',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Amavasya Tarpana',
+				column_one: '$11',
+				column_two: '$11',
+				column_three: 'NA',
+				column_four: 'NA'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Annaprasana',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Ayush homa (birthdays)',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Bhoomi Pooja',
+				column_one: 'NA',
+				column_two: 'NA',
+				column_three: '$201',
+				column_four: '$251'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Funeral Rites',
+				column_one: 'NA',
+				column_two: 'NA',
+				column_three: 'NA',
+				column_four: 'NA'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Gruha Pravesham Pooja Only',
+				column_one: 'NA',
+				column_two: 'NA',
+				column_three: '$201',
+				column_four: '$251'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Gruha Pravesham with Vratam/Homama',
+				column_one: 'NA',
+				column_two: 'NA',
+				column_three: '$251',
+				column_four: '$301'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Homa (Ganapati, Lakshmi, Shanti, Sudarshana, Hayagriva, etc.)',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Kalyana Utsvam (At home for home deities)',
+				column_one: '$151',
+				column_two: '$201',
+				column_three: '$201',
+				column_four: '$251'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Mundan (Hair Offering)',
+				column_one: '$51',
+				column_two: '$75',
+				column_three: '$101',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Namakaranam',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$125'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Navagraha Pooja (w/o Homa)',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Nischithartha (Engagement)',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Punyaha Vaachana',
+				column_one: '$51',
+				column_two: '$75',
+				column_three: '$101',
+				column_four: '$125'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Samuhik Satyanarayana Pooja (Temple Event)',
+				column_one: '$31',
+				column_two: '$31',
+				column_three: 'NA',
+				column_four: 'NA'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Saraswati Pooja (Graduation)',
+				column_one: '$31',
+				column_two: '$51',
+				column_three: 'NA',
+				column_four: 'NA'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Satyanarayana Pooja',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Seemantham',
+				column_one: '$101',
+				column_two: '$151',
+				column_three: '$151',
+				column_four: '$201'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Shasti Purthi (60th, 80th Birthdays)',
+				column_one: '$201',
+				column_two: '$251',
+				column_three: '$301',
+				column_four: '$351'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Shraadham (Hiranya)',
+				column_one: '$51',
+				column_two: '$75',
+				column_three: '$101',
+				column_four: '$125'
 			},
 			{
-				title_column: 'twenday',
-				column_one: '',
-				column_two: '',
-				column_three: '',
-				column_four: ''
+				title_column: 'Upanayana',
+				column_one: '$201',
+				column_two: '$251',
+				column_three: '$251',
+				column_four: '$351'
 			},
 			{
-				title_column: 'twenday',
+				title_column: 'Vahana Pooja',
+				column_one: '$31',
+				column_two: '$51',
+				column_three: 'NA',
+				column_four: 'NA'
+			},
+			{
+				title_column: 'Wedding',
+				column_one: '$301',
+				column_two: '$351',
+				column_three: '$401',
+				column_four: '$501'
+			},
+			{
+				title_column: 'Short Invocation Prayer at Function',
 				column_one: '',
 				column_two: '',
-				column_three: '',
-				column_four: ''
+				column_three: '$51',
+				column_four: '$51'
 			}
 		],
 		$table_caption_type: 'textarea',
