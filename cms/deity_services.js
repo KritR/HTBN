@@ -24,15 +24,13 @@
 	},
 	table_2: {
 		title: 'Special List of Seva',
-		title_column: '',
-		category_one: '',
-		category_two: '',
+		title_column: 'Cereal is Great',
+		category_one: 'Honey Bunches of Oats is my favorite',
 		$rows_min: 1,
 		rows: [
 			{
-				title_column: '',
-				column_one: '',
-				column_two: '',
+				title_column: 'Gotta love them oats',
+				column_one: 'the clusters of gronola are real good too',
 			},
 			
 		],

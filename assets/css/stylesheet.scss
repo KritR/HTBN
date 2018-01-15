@@ -32,6 +32,8 @@
     flex:1 1 auto;
 }
 
+
+
 .flex-col {
   flex-direction: column;
 }
@@ -395,6 +397,10 @@
 .samagri-panel-circle:hover {
 	width: 140px;
 	line-height: 120px;
+	background-color: rgba(169, 30, 172, 1);
+	-webkit-transition: background-color 2s;
+	transition: background-color 2s;
+
 }
 
 .samagri-link:link {

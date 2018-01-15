@@ -1,0 +1,26 @@
+{{#with data}}
+<div class="container diety-table-container">
+	<h1 class="underline-header">{{title}}</h1>
+	<table class="table table-bordered table-striped diety-table">
+		<thead>
+			<tr style="background-color: rgba(169, 30, 172, .8);">
+				<th>{{title_column}}</th>
+				<th>{{category_one}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each rows}}
+			<tr>
+				<td style="text-align: left;">{{title_column}}</td>
+				<td>{{column_one}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<div class="table-comment-text" >
+		<p>
+			{{table_caption}}
+		</p>
+	</div>	
+</div>
+{{/with}}
