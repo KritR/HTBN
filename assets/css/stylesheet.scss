@@ -58,6 +58,30 @@
     padding-right: 0 !important;
 }
 
+.underline-header {
+	color: black;
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+
+.underline-header::after {
+	display: block;
+	content: '';
+	width: 20%;
+	height: 3px;
+	background: orange;
+	margin-top: 10px;
+	position: absolute;
+	left: 40%
+}
+
+.diety-table-container {
+	margin-top: 50px;
+	padding: 0;
+	overflow-x: auto;
+	text-align: center;
+}
+
 .panel-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,12 +180,6 @@
     table-layout: fixed;
 }
 
-.diety-table > thead, tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-
 .priest-table > tbody > tr > td {
     vertical-align: middle;
 	text-align: center;
@@ -178,6 +196,19 @@
 	letter-spacing: .5px;
 	font-size: 17px;
 	font-weight: 300;
+}
+
+.diety-table {
+	min-width: 600px;
+	max-height: 1000px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+.diety-table > thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 .diety-table > thead > tr > th {
@@ -327,7 +358,7 @@
 
 .samagri-panel {
 	text-align: center;
-	margin: 0;
+	margin-bottom: 10px;
 	border: solid #f8f8f9 1px;
 }
 
@@ -359,6 +390,30 @@
 	text-align: center; 
 	font-size: 30px; 
 	line-height: 110px;
+}
+
+.samagri-panel-circle:hover {
+	width: 140px;
+	line-height: 120px;
+}
+
+.samagri-link:link {
+	color: black;
+}
+
+.samagri-link:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.samagri-link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.samagri-link:active {
+	color: black;
+	text-decoration: none;
 }
 
 .samagri-table {

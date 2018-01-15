@@ -1,13 +1,13 @@
 .day-event {
 	display: none;
-	height: 300px;
+	min-height: 300px;
 	margin: 0;
   padding-top: 20px;
 }
 
 .day-event p {
 	font-size: 2rem; 
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .listbox-container {
@@ -27,7 +27,7 @@
 
 .day-event-container {
 	text-align: center;
-	height: 300px;
+	min-height: 300px;
 	background-color: white;
 }
 

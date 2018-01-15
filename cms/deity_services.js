@@ -1,16 +1,21 @@
 {
 	page_title: 'Diety Services',
 	table_1: {
-		title: '',
-		title_column: '',
-		category_one: '',
-		category_two: '',
+		title: 'Regular List of Seva',
+		title_column: 'Item Name',
+		category_one: 'Service/Donation',
+		category_two: 'No. of Items',
 		$rows_min: 1,
 		rows: [
 			{
-				title_column: '',
-				column_one: '',
-				column_two: '',
+				title_column: 'Garlands For Sri Rama, Sita, and Laxmana',
+				column_one: '$50/- each',
+				column_two: '3',
+			},
+			{
+				title_column: 'Garlands For Sri Rama, Sita, and Laxmana. The payment for this can be made installments Do anything ',
+				column_one: '$50/- each',
+				column_two: '3',
 			},
 			
 		],
@@ -18,7 +23,7 @@
 		table_caption: '',
 	},
 	table_2: {
-		title: '',
+		title: 'Special List of Seva',
 		title_column: '',
 		category_one: '',
 		category_two: '',

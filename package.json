@@ -5,7 +5,8 @@
 	"main": "assets/vendor/enduro/index.js",
 	"scripts": {
 		"postinstall": "node_modules/bower/bin/bower install",
-		"start": "node_modules/.bin/enduro start"
+		"start": "node_modules/.bin/enduro start",
+		"start-dev": "node_modules/.bin/enduro dev"
 	},
 	"author": "author goes here",
 	"license": "ISC",
