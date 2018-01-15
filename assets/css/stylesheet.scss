@@ -19,6 +19,10 @@
   color: white;
 }
 
+.bg-dark {
+	background-color: #f8f8f9; 
+}
+
 .row-flex, .row-flex > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
@@ -59,7 +63,6 @@
   background-size: cover;
   min-height: 300px;
 }
-
 
 .panel-text-container {
 	padding-left: 60px;
