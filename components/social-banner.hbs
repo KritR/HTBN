@@ -1,4 +1,4 @@
-{{#with data}}
+{{#with global.social_banner}}
 <div class="container-fluid social-container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 content-block">
@@ -8,10 +8,10 @@
       </a>
     </div>
     <div class="col-xs-12 col-sm-6 content-block">
-      <h3 style="margin-bottom: 25px;">{{social_message}}</h3>
+      <h3>{{social_message}}</h3>
       {{#each social_media}}
-        <a class="social-icon" href="{{link}}">
-          <img src="{{icon}}" alt="{{name}}"></img>
+        <a href="{{url}}" class="btn btn-lg btn-social-icon {{class 'btn_facebook' 'btn_twitter' 'btn_instagram' 'btn_google'}}">
+          <span class="fa {{class 'fa_twitter' 'fa_facebook' 'fa_google_plus' 'fa_instagram'}}"></span>
         </a>
       {{/each}}
     </div>

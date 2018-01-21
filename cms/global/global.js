@@ -1,29 +1,8 @@
 {
 	footer_copyright_notice: '© 2014 Hindu Temple of Bloomington-Normal Registered • Not-for-profit tax-exempt religious organization',
-	$routes_types_hidden: true,
-	routes_types: {
-		route: {
-			$route_type_type: 'title',
-			route_type: 'Single Link',
-			title: '',
-			link: ''
-		},
-		route_menu: {
-			$route_type_type: 'title',
-			route_type: 'Link Menu',
-			title: '',
-			$routes_min: 1,
-			routes: [
-				{
-					title: '',
-					link: ''
-				}
-			]
-		}
-	},
 	$navigation_logo_type: 'image',
 	navigation_logo: '',
-	$navigation_templatitator: '@@routes_types',
+	$navigation_templatitator: '@@global.routes_types',
 	navigation: [
 		{
 			$route_type_type: 'title',
@@ -99,5 +78,23 @@
 			title: 'Contact Us',
 			link: '/contact_us'
 		}
-	]
+	],
+	social_banner: {
+		$join_message_type: 'textarea',
+		join_message: 'Become a member of the temple and enjoy our benefits',
+		join_link: '#',
+		join_button: 'Sign Up Now',
+		$social_message_type: 'textarea',
+		social_message: 'Want to help us spread the word? Share today',
+		$social_media_templatitator: '@@global.social_types',
+		social_media: [
+			{
+				url: 'https://www.facebook.com/HinduTempleBloomingtonNormal',
+				$btn_facebook_hidden: true,
+				btn_facebook: true,
+				$fa_facebook_hidden: true,
+				fa_facebook: true
+			}
+		]
+	}
 }

@@ -205,20 +205,4 @@
 		$table_caption_type: 'textarea',
 		table_caption: '• It is not required but customary to give dakshina to a priest in a Hindu culture. Devotees may write a separate check or give cash directly to the priest. \n• Above charges are applicable for the region about 15 to 20 miles within temple. Please contact temple for outside this region. \n• For at home services, devotees are responsible for priest’s transportation. In case priest drives his car, host is expected to pay directly to priest at \n   $0.50/mile.'
 	},
-	bottom_banner: {
-		$join_message_type: 'textarea',
-		join_message: 'Become a member of the temple and enjoy our benefits',
-		join_link: '#',
-		join_button: 'Sign Up Now',
-		$social_message_type: 'textarea',
-		social_message: 'Want to help us spread the word? Share today',
-		$social_media_min: 1,
-		social_media: [
-			{
-				name: '',
-				link: '',
-				icon: ''
-			}
-		]
-	}
 }

@@ -105,20 +105,4 @@
 		$table_caption_type: 'textarea',
 		table_caption: 'Be at temple 30 minutes before Abhishekam for Kalash Puja.'
 	},
-	bottom_banner: {
-		$join_message_type: 'textarea',
-		join_message: 'Become a member of the temple and enjoy our benefits',
-		join_link: '#',
-		join_button: 'Sign Up Now',
-		$social_message_type: 'textarea',
-		social_message: 'Want to help us spread the word? Share today',
-		$social_media_min: 1,
-		social_media: [
-			{
-				name: '',
-				link: '',
-				icon: ''
-			}
-		]
-	}
 }
