@@ -42,6 +42,9 @@
   .vmargin-#{$size} { margin-top: 1em * $ratio ; margin-bottom: 1em * $ratio; }
   .hmargin-#{$size} { margin-left: 1em * $ratio ; margin-right: 1em * $ratio; }
   .margin-#{$size} { @extend .vmargin-#{$size}; @extend .hmargin-#{$size}; }
+  .vmargin-r-#{$size} { margin-top: 0.6vw * $ratio ; margin-bottom: 0.6vw * $ratio; }
+  .hmargin-r-#{$size} { margin-left: 0.6vw * $ratio ; margin-right: 0.6vw * $ratio; }
+  .margin-r-#{$size} { @extend .vmargin-r-#{$size}; @extend .hmargin-r-#{$size}; }
 }
 
 
@@ -444,6 +447,11 @@
 	.opening-image {
 		background-position: center;
 	}
+  .jumbo {
+    h1 {
+      font-size: 30px;
+    }
+  }
 }
 
 @media only screen and (max-width: 960px) {
